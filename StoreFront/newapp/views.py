@@ -8,7 +8,8 @@ View is a request handler.
 
 def home(request):
     #return HttpResponse("Home Page")
-    return render(request,'index.html')
+    return render(request,'index.html',{"page":"About Us"})
+    #return render(request,'index.html')
 
 def say_Hi(request):
     return HttpResponse('Hi')
